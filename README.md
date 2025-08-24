@@ -48,13 +48,14 @@ Decision boundary plot using first two features for 2D visualization.
 Results
 
 SVM achieved high accuracy in classifying Iris flowers.
+Decision boundary shows clear separation between species in feature space.
+Confusion matrix confirms correct classification for most samples.
+
 
 Some data visualization:
+
 <img width="565" height="455" alt="image" src="https://github.com/user-attachments/assets/3749afaf-1353-4949-87e6-088de4231ac9" />
 
 <img width="1112" height="1023" alt="image" src="https://github.com/user-attachments/assets/b9b742ce-a852-44e5-a858-0b49e606255a" />
 
 <img width="557" height="455" alt="image" src="https://github.com/user-attachments/assets/05c30226-3d43-4ee4-8258-40b5bc4c3694" />
-Decision boundary shows clear separation between species in feature space.
-
-Confusion matrix confirms correct classification for most samples.
