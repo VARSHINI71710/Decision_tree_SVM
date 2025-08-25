@@ -1,61 +1,81 @@
 Iris Flower Classification using SVM
 Task Description
 
-Classify Iris flowers into three species — Setosa, Versicolor, Virginica — using a Support Vector Machine (SVM).
+This project classifies Iris flowers into three species: Setosa, Versicolor, and Virginica using a Support Vector Machine (SVM) classifier.
+
+The goal is to predict the species of an Iris flower based on its sepal and petal measurements.
 
 Dataset
 
 Source: sklearn.datasets.load_iris()
 
-Features: Sepal length, Sepal width, Petal length, Petal width
+Features:
 
-Target: Flower species (3 classes)
+Sepal length (cm)
+
+Sepal width (cm)
+
+Petal length (cm)
+
+Petal width (cm)
+
+Target: Flower species (3 classes: Setosa, Versicolor, Virginica)
 
 Total rows: 150
 
 Steps Performed
+1. Data Loading and Preprocessing
 
-Data Loading and Preprocessing
+Loaded the Iris dataset from sklearn.datasets.
 
-Loaded Iris dataset from sklearn.
+Converted the features and target into a Pandas DataFrame for better handling.
 
-Converted features and target to a DataFrame.
+Encoded the target species using LabelEncoder.
 
-Scaled features using StandardScaler.
+Scaled the features using StandardScaler to standardize input for SVM.
 
-Model Training
+2. Model Training
 
-Split data into train (80%) and test (20%) sets.
+Split the dataset into train (80%) and test (20%) sets.
 
-Trained SVM classifier with RBF kernel.
+Trained an SVM classifier with RBF kernel on the scaled training data.
 
-Evaluation
+3. Model Evaluation
 
-Calculated accuracy on the test set.
+Predicted species on the test set.
+
+Calculated accuracy to measure performance.
 
 Plotted confusion matrix to check per-class performance.
 
-Prediction
+4. Prediction
 
-Predicted the species for new sample inputs.
+Tested the trained model with new sample inputs.
 
-Visualization
+Model predicts the species based on user-provided sepal and petal measurements.
 
-Pairplot for all features colored by species.
+5. Visualization
 
-Decision boundary plot using first two features for 2D visualization.
+Pairplot: Visualizes feature relationships colored by species.
+
+Decision boundary plot: Shows separation between species using the first two features in 2D.
 
 Results
 
-SVM achieved high accuracy in classifying Iris flowers.
-Decision boundary shows clear separation between species in feature space.
+The SVM model achieved high accuracy in classifying Iris flowers.
+
+Decision boundary clearly separates species in feature space.
+
 Confusion matrix confirms correct classification for most samples.
 
+Tools and Libraries
 
-Some data visualization:
+Python 3.x
 
-<img width="565" height="455" alt="image" src="https://github.com/user-attachments/assets/3749afaf-1353-4949-87e6-088de4231ac9" />
+scikit-learn (SVM, dataset, preprocessing, metrics)
 
-<img width="1112" height="1023" alt="image" src="https://github.com/user-attachments/assets/b9b742ce-a852-44e5-a858-0b49e606255a" />
+Pandas and NumPy
 
-<img width="557" height="455" alt="image" src="https://github.com/user-attachments/assets/05c30226-3d43-4ee4-8258-40b5bc4c3694" />
+Matplotlib and Seaborn (visualizations)
+
+Streamlit (optional for interactive predictions)
