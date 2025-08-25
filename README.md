@@ -1,16 +1,14 @@
 Iris Flower Classification using SVM
 
 Iris flower classification streamlit link:https://decisiontreesvm-classify.streamlit.app/
+____________________
 Task Description
 
 This project classifies Iris flowers into three species: Setosa, Versicolor, and Virginica using a Support Vector Machine (SVM) classifier.
 
 The goal is to predict the species of an Iris flower based on its sepal and petal measurements.
 
-Dataset
-
-Source: sklearn.datasets.load_iris()
-
+_______________
 Features:
 
 Sepal length (cm)
@@ -24,8 +22,9 @@ Petal width (cm)
 Target: Flower species (3 classes: Setosa, Versicolor, Virginica)
 
 Total rows: 150
-
+___________________
 Steps Performed
+
 1. Data Loading and Preprocessing
 
 Loaded the Iris dataset from sklearn.datasets.
@@ -61,7 +60,7 @@ Model predicts the species based on user-provided sepal and petal measurements.
 Pairplot: Visualizes feature relationships colored by species.
 
 Decision boundary plot: Shows separation between species using the first two features in 2D.
-
+_______________
 Results
 
 The SVM model achieved high accuracy in classifying Iris flowers.
@@ -69,10 +68,10 @@ The SVM model achieved high accuracy in classifying Iris flowers.
 Decision boundary clearly separates species in feature space.
 
 Confusion matrix confirms correct classification for most samples.
-
+_____________________
 Tools and Libraries
 
-Python 3.x
+Python 3.12.5
 
 scikit-learn (SVM, dataset, preprocessing, metrics)
 
