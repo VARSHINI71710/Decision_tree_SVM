@@ -20,10 +20,4 @@ if st.button("Predict Flower"):
     predicted_flower = le.inverse_transform(prediction_numeric)[0]  # Convert numeric label back to species
     st.success(f"🌼 The predicted Iris flower is: **{predicted_flower}**")
 
-# Optional: show sample prediction
-if st.button("Try Sample Input [5.5, 3.0, 4.2, 1.3]"):
-    sample = np.array([[5.5, 3.0, 4.2, 1.3]])
-    sample_scaled = scaler.transform(sample)
-    sample_prediction = svc.predict(sample_scaled)
-    sample_flower = le.inverse_transform(sample_prediction)[0]
-    st.info(f"Sample Prediction: **{sample_flower}**")
+
